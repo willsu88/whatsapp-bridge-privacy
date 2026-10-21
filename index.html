@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WhatsApp Bridge - Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 42rem;
+    margin: 4rem auto;
+    padding: 0 1.25rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; }
+  .updated { color: #666; font-size: 0.9rem; margin-top: 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.4rem 0; }
+  @media (prefers-color-scheme: dark) { .updated { color: #999; } }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: 21 October 2026</p>
+
+<p>
+  This policy covers a WhatsApp messaging bridge (the "bridge"), a proof of
+  concept built during Cresta's APAC build week. The bridge connects a WhatsApp
+  test number to a Cresta AI agent so that a user can hold a text conversation
+  with that agent over WhatsApp.
+</p>
+
+<h2>What the bridge does with your messages</h2>
+<ul>
+  <li>It receives WhatsApp messages sent to the test number.</li>
+  <li>It forwards the text of those messages to a Cresta AI agent and returns
+      the agent's reply to WhatsApp.</li>
+  <li>It does not store message content beyond what is held in memory while the
+      request is being handled.</li>
+  <li>It does not sell, share or disclose message content to anyone other than
+      the Cresta service that generates the reply.</li>
+</ul>
+
+<h2>Who can use it</h2>
+<p>
+  The test number is a Meta-provided sandbox number. It accepts messages only
+  from a small allowlist of phone numbers registered by the operator, and it can
+  reply only to those numbers. It is not open to the public.
+</p>
+
+<h2>What is collected</h2>
+<p>
+  The bridge logs the sender's WhatsApp identifier and the length of each
+  message for operational debugging. Message text is not logged by default. No
+  account, profile or contact data is collected, and no data is retained after
+  the request completes.
+</p>
+
+<h2>Third parties</h2>
+<p>
+  Messages are processed by Meta's WhatsApp Business Platform, which delivers
+  them to the bridge, and by Cresta's AI agent platform, which generates the
+  reply. Each of those services handles data under its own privacy policy.
+</p>
+
+<h2>Changes</h2>
+<p>
+  This is a short-lived proof of concept. This policy may be updated as the
+  bridge changes, and the date at the top will reflect the most recent revision.
+</p>
+
+</body>
+</html>
